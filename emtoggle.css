@@ -1,0 +1,17 @@
+/* This selects all data-visible="false" elements EXCEPT the data-class-toggle ones */
+[data-emvisible="false"]:not([data-emtoggle]) {
+    display: none;
+}
+
+/* Give data-class-toggle elements a bit of a margin and shadow */
+[data-emtoggle] {
+    margin: 2px;
+    box-shadow: 1px 1px 1px black;
+}
+
+/* Alter data-class-toggle elements margin and shadow */
+[data-emtoggle]:hover,
+[data-emtoggle][data-emvisible="true"] {
+    margin: 3px 1px 1px 3px;
+    box-shadow: 0px 0px 1px black;
+}
