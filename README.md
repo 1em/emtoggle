@@ -14,9 +14,11 @@
 ```
 
 3. On the clickable or touchable toggle element, add the HTML code as follows:    
+
 ```   
     <button data-emlink="somemenu" data-emtoggle>A Menu Button</button>
 ```
+
 4. On the invisible menu element, add the following HTML code:
 
 ```   
@@ -30,3 +32,7 @@ On initial window load, all non data-emtoggle elements with data-emlink values w
 You can have more than two elements with the same data-emlink values. They will all toggle with their data-emtoggle element(s).
 
 Also, classes or ids are separate from the data-emlink values. This, hopefully, will separate CSS styling from toggle functions.
+
+Some sample styling is in the emtoggle.css file, you can remove or add to it if you wish. 
+
+The only necessary styling is (display: none) on the data-emlink elements. 
