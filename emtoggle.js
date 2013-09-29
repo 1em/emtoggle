@@ -11,6 +11,6 @@ window.onload = function initialize() {
     var visibles = document.querySelectorAll("[data-emlink]"); // all data-emlinks        
     var string_type = "click" // default is click
     if (('ontouchstart' in window) || ('msmaxtouchpoints' in window.navigator)) string_type = "touchend"
-    for (var i=0; i < toggle_elements.length; i++) toggle_elements[i].addEventListener(string_type, toggleListener, true)  //add listeners to dat-emtoggle elements
+    for (var i=0; i < toggle_elements.length; i++) toggle_elements[i].addEventListener(string_type, toggleListener, true)  //add listeners to data-emtoggle elements
     for (var i=0; i < visibles.length; i++) visibles[i].setAttribute("data-emvisible", "false") //initialize to false
 }
